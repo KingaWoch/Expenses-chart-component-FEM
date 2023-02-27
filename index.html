@@ -11,18 +11,55 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | Expenses chart component</title>
   </head>
   <body>
-    My balance $921.48 Spending - Last 7 days mon tue wed thu fri sat sun Total
-    this month $478.33 +2.4% from last month
+    <div class="container">
+      <header>
+        <div class="flex">
+          <h2>My balance</h2>
+          <span class="balance">$921.48</span>
+        </div>
+        <img src="images/logo.svg" alt="logo" />
+      </header>
+      <main>
+        <section>
+          <h1>Spending - Last 7 days</h1>
+          <div class="chart">
+            <!-- <canvas id="bar-chart" width="300" height="300"></canvas> -->
+          </div>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+          <div class="section-footer">
+            <div class="flex">
+              <h3>Total this month</h3>
+              <span class="total">$478.33</span>
+            </div>
+            <div class="flex right">
+              <span class="percent">+2.4%</span>
+              <p>from last month</p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="attribution">
+        <p>
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="https://github.com/KingaWoch" target="_blank">Kinga Woch</a>.
+        </p>
+      </footer>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
